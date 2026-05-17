@@ -21,7 +21,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/upload-resume",
+        "https://placement-ai-backend-5eba.onrender.com/upload-resume",
         formData
       );
       setAnalysis(response.data.analysis);
@@ -39,7 +39,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/generate-interview",
+        "https://placement-ai-backend-5eba.onrender.com/generate-interview",
         {
           company,
           role
@@ -61,7 +61,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/mock-interview",
+        "https://placement-ai-backend-5eba.onrender.com/mock-interview",
         {
           answer
         }
